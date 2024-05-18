@@ -1,5 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", function() {
+
   const gatoCajas=document.getElementById("gatoContainer");
   const gatoNotif=document.getElementById("gatoNotif");
   const modalVolver=document.getElementById("modalVolver");
@@ -95,4 +95,3 @@ function reply_id(fotoId,fotoSrc){
     </div>
     `;
 }
-});

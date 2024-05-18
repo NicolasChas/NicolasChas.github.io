@@ -18,5 +18,3 @@ var con = mysql.createConnection({
     })
   });
 
-document.addEventListener("DOMContentLoaded", function() {
-});
