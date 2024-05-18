@@ -1,11 +1,9 @@
+const gatoCajas=document.getElementById("gatoContainer");
+const gatoNotif=document.getElementById("gatoNotif");
+const modalVolver=document.getElementById("modalVolver");
+const modalBody=document.getElementById("modal-body");
 
-
-  const gatoCajas=document.getElementById("gatoContainer");
-  const gatoNotif=document.getElementById("gatoNotif");
-  const modalVolver=document.getElementById("modalVolver");
-  const modalBody=document.getElementById("modal-body");
-
-/*const gatos = [
+const gatos = [
   {
     id: 1,
     color: "Crema",
@@ -61,10 +59,9 @@
     img:"siames2.jpg"
   },
 ];
-*/
 
-const {gatos}=require("./script2.js");
-console.log(gatos);
+
+
 gatos.forEach(
     ({Id_sn,img}) => {
       gatoCajas.innerHTML += `

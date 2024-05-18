@@ -1,6 +1,7 @@
 import mysql.connector
 from flask import Flask,render_template, request
 
+
 app = Flask(__name__)
 mydb = mysql.connector.connect(
   host="localhost",
@@ -22,8 +23,10 @@ def submit():
   mycursor.execute(query)
   for x in mycursor:
     print(x)
+
   mycursor.close()
 
+submit()
 
 #mycursor = mydb.cursor()
 #mycursor.execute("select * from gatos_sin_adoptar")
