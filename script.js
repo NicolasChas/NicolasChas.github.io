@@ -11,7 +11,7 @@ const gatos = [
     genero:"Macho",
     raza:"Siames",
     peso: 4,
-    img:"siames1.png"
+    img:"siames1.jpg"
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const gatos = [
     genero:"Macho",
     raza:"Europeo",
     peso: 3,
-    img:"europeancat.png"
+    img:"europeancat.jpg"
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const gatos = [
     genero:"Macho",
     raza:"Persa",
     peso: 3,
-    img:"persiancat.png"
+    img:"persiancat.jpg"
   },
   {
     id: 6,
