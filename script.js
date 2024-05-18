@@ -60,13 +60,11 @@ const gatos = [
   },
 ];
 
-
-
 gatos.forEach(
-    ({Id_sn,img}) => {
+    ({id,img}) => {
       gatoCajas.innerHTML += `
         <div class="gato_caja">
-        <img id="${Id_sn}" onClick="reply_id(this.id,this.src)" class="gatoFoto" src=${img} alt="Imágen del gato" data-toggle="modal" data-target="#exampleModalCenter" >
+        <img id="${id}" onClick="reply_id(this.id,this.src)" class="gatoFoto" src=${img} alt="Imágen del gato" data-toggle="modal" data-target="#exampleModalCenter" >
         </div>
       `;
     }
@@ -75,7 +73,7 @@ gatos.forEach(
 function reply_id(fotoId,fotoSrc){
   let currFoto=0;
    for(let i=0;i<gatos.length;i++){
-    if(fotoId==gatos[i].Id_sn){
+    if(fotoId==gatos[i].id){
        currFoto=fotoId;
     }
    }
